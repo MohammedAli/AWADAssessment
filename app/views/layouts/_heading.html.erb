@@ -1,13 +1,13 @@
 <div class="row-fluid" id="heading">
   
   <div class="span6">
-    <h2>AthleteDB</h2>
+<h2><%= link_to "AthleteDB", :index %></h2>
   </div>
 
   <div class="span6 text-right">
     <div class="btn-group">
-      <button class="btn"><%= t('buttons.login') %></button>
-      <button class="btn"><%= t('buttons.signup') %></button>
+    <%= link_to t('buttons.login'), new_user_session_path, class: 'btn' %>
+	<%= link_to t('buttons.signup'), new_user_registration_path, class: 'btn' %>
     </div>
   </div>
 
