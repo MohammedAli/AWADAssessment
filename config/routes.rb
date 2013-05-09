@@ -1,4 +1,8 @@
 AthleteBBC::Application.routes.draw do
+get "athletes/index"
+
+get "athletes/show"
+
 get "pages/index"
 root :to => "pages#index", as: :index
 

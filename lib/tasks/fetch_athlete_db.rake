@@ -16,8 +16,8 @@ task :fetch_athlete_data => :environment do
     # Create a temporary hash to store these fields
     hash = { :sname => line[0], :fname => line[1],
       :height => line[2], :weight => line[3],
-      :country => line[4], :code => line[5],
-      :gender => line[6], :sport => line[7], :event => line[8]
+      :country => line[4], :code => line[6],
+      :gender => line[7], :sport => line[8], :event => line[9]
     }
 
     athlete = Athlete.new(hash)
