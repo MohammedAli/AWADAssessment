@@ -8,15 +8,18 @@
 </head>
 <body>
 
-<% if notice || alert  %>
-  <div class="row-fluid alert alert-warning">
-	<p><%= notice %></p>
-    <p><%= alert %></p>
-  </div>
-<% end  %>
+<div class="container">
+  <% if notice || alert  %>
+    <div class="row-fluid alert alert-warning">
+      <p><%= notice %></p>
+      <p><%= alert %></p>
+    </div>
+  <% end  %>
 
-
-<%= yield %>
+  <%= render 'layouts/heading' %>
+    
+  <%= yield %>
+</div>
 
 </body>
 </html>

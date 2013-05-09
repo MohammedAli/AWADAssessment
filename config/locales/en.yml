@@ -1,5 +1,13 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
 en:
-  hello: "Hello world"
+buttons:
+	login: "Login"
+	signup: "Signup"
+ index:
+    heading: "Athlete data, all in one page."
+    view_list: "View List"
+    features:
+      one: "Athlete data is fetched from from BBC"
+      two: "You can view an athlete's info and 'Star' him/her"
+      three: "Comments are also allowed. Please something on their guestbooks!"
+      four: "Available in English and one more language"
+  hello: "Hello world!"

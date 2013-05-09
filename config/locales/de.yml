@@ -1,0 +1,13 @@
+de:
+  buttons:
+    login: "Anmelden"
+    signup: "Anmeldungen"
+  index:
+    heading: "Athlete Daten, alle auf einer Seite."
+    view_list: "Liste anzeigen"
+    features:
+      one: "Athlete Daten aus von BB geholt"
+      two: "Sie können eines Sportlers info und 'Star' ihn / sie"
+      three: "Kommentare sind ebenfalls erlaubt. Bitte etwas auf ihr Gästebuch!"
+      four: "Verfügbar in Englisch und eine weitere Sprache"
+  hello: "Hallo Welt!"
