@@ -15,7 +15,9 @@
       <th>Gender</th>
       <th>Sport/Discipline</th>
       <th>Events</th>
+	  <th>Link</th>
     </tr>
+	
     <% @athletes.each do |athlete| %>
     <tr>
       <th><%= athlete.fname %></th>
@@ -25,7 +27,13 @@
       <td><%= athlete.gender %></td>
       <td><%= athlete.sport %></td>
       <td><%= athlete.event %></td>
+	  <td>
+	    <%= link_to athletes_show_path(:id => athlete.id) do %>
+        <i class="icon-retweet"></i>
+        <% end  %>
+      </td>
     </tr>
     <% end %>
+	
   </table>
 </div>

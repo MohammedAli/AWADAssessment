@@ -1,2 +1,57 @@
-<h1>Athletes#show</h1>
-<p>Find me in app/views/athletes/show.html.erb</p>
+<div class="row-fluid">
+  <h3>
+    Welcome to <%= @athlete.fname %> <%= @athlete.sname %>'s page.
+  </h3>  
+</div>
+
+<hr>
+
+<div class="row-fluid">
+
+  <div class="span4">
+    <div class="row-fluid">
+      <a href="#" class="btn btn-primary btn-large span12">
+        <i class="icon-star icon-white"></i> Star
+      </a>  
+    </div>
+    <p></p>
+    <div class="row-fluid">
+      <a href="#" class="btn btn-info btn-large span12">
+        <i class="icon-retweet icon-white"></i> Link
+      </a>  
+    </div>
+  </div>
+
+  <div class="span8">
+    
+    <div class="row-fluid" id="athleteInfo">
+      <table class="table table-bordered">
+        <tr>
+          <td>Country:</td>
+          <th><%= @athlete.country %> (<%= @athlete.code %>)</th>
+        </tr>
+
+        <tr>
+          <td>Height:</td>
+          <th><%= @athlete.height %></th>
+        </tr>
+
+        <tr>
+          <td>Weight:</td>
+          <th><%= @athlete.weight %></th>
+        </tr>
+
+        <tr>
+          <td>Sport/Discipline:</td>
+          <th><%= @athlete.sport %></th>
+        </tr>
+
+        <tr>
+          <td>Event:</td>
+          <th><%= @athlete.event %></th>
+        </tr>
+      </table>  
+    </div>
+
+  </div>
+</div>
