@@ -1,4 +1,7 @@
 AthleteBBC::Application.routes.draw do
+get "pages/index"
+root :to => "pages#index", as: :index
+
 devise_for :users
 
   # The priority is based upon order of creation:
