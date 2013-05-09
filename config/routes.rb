@@ -3,6 +3,7 @@ get "athletes/index"
 
 get "athletes/show"
 get "athletes/star"
+post "athletes/search"
 
 get "pages/index"
 root :to => "pages#index", as: :index

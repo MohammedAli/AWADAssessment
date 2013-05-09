@@ -7,6 +7,14 @@ class AthletesController < ApplicationController
     @athlete = Athlete.find(params[:id])
   end
   
+    def search
+    @athletes = Athlete.where(:country => params[:country])
+
+    if @athletes.empty?
+      redirect_to athletes_index_path, notice: 'No records found. Please try again.'
+    end
+  end
+
   def star
     @athlete = Athlete.find(params[:id])
 
