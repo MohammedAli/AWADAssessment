@@ -1,6 +1,7 @@
 en:
 buttons:
 	login: "Login"
+	logout: "Logout"
 	signup: "Signup"
  index:
     heading: "Athlete data, all in one page."

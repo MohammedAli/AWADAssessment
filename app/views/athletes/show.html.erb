@@ -10,9 +10,9 @@
 
   <div class="span4">
     <div class="row-fluid">
-      <a href="#" class="btn btn-primary btn-large span12">
-        <i class="icon-star icon-white"></i> Star
-      </a>  
+           <%= link_to athletes_star_path(:id => @athlete.id), class: 'btn btn-primary btn-large span12' do %>
+        <i class="icon-star icon-white"></i> <%= @athlete.stars.count %>
+      <% end  %> 
     </div>
     <p></p>
     <div class="row-fluid">
